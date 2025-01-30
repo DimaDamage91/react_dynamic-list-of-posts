@@ -105,7 +105,7 @@ export const PostDetails: React.FC<Props> = ({ selectedPost }) => {
           </button>
         </div>
 
-        {isFormOpen && <NewCommentForm setComments={setComments}/>}
+        {isFormOpen && <NewCommentForm selectedPost={selectedPost} setComments={setComments}/>}
       </div>
   );
 }
